@@ -1,0 +1,136 @@
+# Queuevana+
+
+> **Status: Under Development / Experimental**
+
+Queuevana+ is an in-development evolution of Queuevana focused on exposing a **deterministic input queue system as a reusable library** rather than a standalone, game-focused tool.
+
+While Queuevana and Queuevana Hold are designed primarily for end-user execution, Queuevana+ is intended to be **integrated into other software, tools, or workflows**.
+
+---
+
+## What Is Queuevana+?
+
+Queuevana+ provides a structured way to capture, queue, and replay input events with strict ordering and optional timing control.
+
+The goal is to make input handling:
+
+* Predictable
+* Deterministic
+* Decoupled from real-time execution constraints
+
+Queuevana+ is not limited to gaming and is **not a macro or automation framework**.
+
+---
+
+## Design Goals
+
+Queuevana+ is being built around the following principles:
+
+* **Library-first design**
+  Intended to be called, embedded, or linked rather than run directly
+
+* **Deterministic behavior**
+  Input order is preserved exactly as received
+
+* **Minimal abstraction leakage**
+  Clear separation between input capture, scheduling, and execution
+
+* **Low overhead**
+  Suitable for long-running or background usage
+
+* **Composable**
+  Designed to integrate cleanly with other systems
+
+---
+
+## Intended Use Cases
+
+Queuevana+ is aimed at scenarios where predictable input scheduling is required, including:
+
+* Application-level input handling
+* Tooling and utilities that process user input
+* Accessibility or assistive workflows
+* Testing and simulation environments
+* Gaming and non-gaming scenarios where raw input timing is unreliable
+
+It is **not designed specifically for competitive gaming**, nor does it provide automation or gameplay logic.
+
+---
+
+## Current Status
+
+Queuevana+ is **under active development**.
+
+At this stage:
+
+* APIs are not considered stable
+* Behavior and structure may change
+* Documentation is subject to revision
+
+Breaking changes may occur without notice.
+
+---
+
+## Relationship to Queuevana
+
+| Project        | Purpose                                     |
+| -------------- | ------------------------------------------- |
+| Queuevana      | General-purpose input queue (end-user tool) |
+| Queuevana Hold | Specialized hold-based variant (niche)      |
+| Queuevana+     | Reusable input queue engine (library)       |
+
+Queuevana+ shares the same core philosophy but targets a different audience.
+
+---
+
+## What Queuevana+ Is *Not*
+
+To avoid confusion, Queuevana+:
+
+* Does **not** automate input
+* Does **not** generate synthetic actions
+* Does **not** bypass application logic
+* Does **not** provide macros or scripting layers
+
+It strictly processes **real input events**.
+
+---
+
+## Roadmap (High-Level)
+
+Planned areas of exploration include:
+
+* Clean public API for enqueueing and processing input events
+* Configurable timing and scheduling policies
+* Modular input sources and sinks
+* Optional bindings for different environments
+
+This roadmap is intentionally flexible.
+
+---
+
+## Contributing
+
+Because Queuevana+ is experimental, contributions are welcome in the form of:
+
+* Design discussion
+* Architecture feedback
+* Edge-case testing
+
+Implementation details may change rapidly.
+
+---
+
+## Disclaimer
+
+Queuevana+ is provided as-is during development.
+
+Use responsibly and ensure compliance with the terms of any software or platform it interacts with.
+
+---
+
+## Closing
+
+Queuevana+ exists to make **input handling boring, predictable, and reliable** — even in environments where timing and ordering are traditionally difficult to control.
+
+As development progresses, documentation and guarantees will evolve accordingly.
